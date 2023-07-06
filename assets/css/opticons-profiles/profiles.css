@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: #141414;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+
+  overflow-x: hidden;
+}
+.main-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* background-color: yellow; */
+}
+.profiles-opticons {
+}
+.profiles-opticons .title {
+  font-size: 2.7rem;
+  text-align: center;
+  color: #fff;
+}
+.opticons-container {
+  width: 100vw;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profiles-all {
+  display: flex;
+  min-width: inherit;
+  justify-content: center;
+  gap: 20px;
+
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+}
+.opticons-profiles-info {
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  overflow: hidden;
+}
+.profiles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.manager-profiles {
+  min-width: 1140px;
+  margin: auto;
+
+  width: 200px;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.manager-button {
+  /* height: inherit; */
+  /* background-color: yellow; */
+}
+.manager-button a {
+  display: flex;
+  padding: 8px 20px;
+  color: #929292;
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid #878787;
+  font-weight: normal;
+  border-radius: 1px;
+}
+.manager-button a:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.profiles h2 {
+  font-size: 16px;
+  color: #727272;
+  font-weight: normal;
+}
+
+.opticons-profiles-info img {
+  width: 100%;
+}
+.profiles:hover .opticons-profiles-info {
+  border: 2px solid #fff;
+}
+
+@media (max-width: 450px) {
+  .profiles-opticons .title {
+    font-size: 2rem;
+    /* color: blue; */
+  }
+}

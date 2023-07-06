@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+    sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  height: calc(100vh -100px);
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/d282a426-b01a-424c-9b83-2c2445e4b61a/06f2847e-02cc-417b-863c-40bf348046da/BR-pt-20230626-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.cover {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+header {
+}
+
+.header-container {
+  height: 100px;
+}
+.header-container .logo {
+  padding: 0px 25px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #e50815;
+}
+.area-input {
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 30px;
+}
+.textfield {
+  width: 330px;
+  height: 450px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.textfield-input {
+  height: 50%;
+  padding: 30px 38px;
+}
+
+.form_group {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textfield-input .title {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: aliceblue;
+}
+
+.textfield-input .btn-enter {
+  display: block;
+  background-color: #e50815;
+  padding: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  border-radius: 4px;
+}
+.form_group input {
+  padding: 10px;
+  outline: none;
+  background-color: rgb(51, 51, 51);
+  border: 0px;
+  border-radius: 3px;
+}
+.form_group span {
+  position: absolute;
+  font-size: 12px;
+  left: 5px;
+  top: 32px;
+  pointer-events: none;
+  transition: 0.5s;
+  opacity: 0.5;
+  color: #7c7c7c;
+}
+.form_group {
+  position: relative;
+
+  height: 80px;
+}
+.textfield-input input:focus ~ span,
+.textfield-input input:valid ~ span {
+  transform: translateY(-5px);
+  font-size: 10px;
+  opacity: 1;
+  color: #7c7c7c;
+}
+.cover-div {
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.checkbox {
+  padding: 8px 0px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkbox-input {
+  display: flex;
+}
+
+.checkbox h3 {
+  font-size: 10px;
+  color: #aaaaaa;
+  margin-left: 3px;
+}
+.checkbox-ajuda {
+  justify-content: end;
+}
+
+.checkbox-ajuda a {
+  display: flex;
+  justify-content: end;
+  font-size: 10px;
+  color: #aaaaaa;
+}
+.checkbox-ajuda a:hover {
+  text-decoration: underline;
+}
+
+.description-info {
+  padding-top: 20px;
+  font-weight: normal;
+}
+.description-info .new-here span {
+  font-size: 12px;
+  display: inline-block;
+  color: #5b5858;
+  margin-bottom: 2px;
+  margin-bottom: 8px;
+}
+
+.description-info .new-here span a {
+  color: #fff;
+}
+.description-info p {
+  color: #5b5858;
+  font-size: 10px;
+  /* display: flex; */
+  line-height: 12px;
+}
+.description-info p a {
+  color: #0370ea;
+}
+
+.ask-section {
+  height: inherit;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.ask-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex: 1;
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.title-ask span {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  color: #aaaaaa;
+}
+.title-ask span a {
+  color: #aaaaaa;
+}
+.title-ask span a:hover,
+.options a:hover {
+  text-decoration: underline;
+}
+.ask-opticons {
+  display: flex;
+  justify-content: space-between;
+  gap: 3px;
+}
+.options {
+  flex: 1;
+}
+.options a {
+  font-size: 10px;
+  color: #aaaaaa;
+  font-weight: normal;
+}
+@media (max-width: 450px) {
+  .cover {
+    background-color: #000000;
+  }
+
+  .area-input .textfield {
+    flex: 1;
+  }
+  .cover-div {
+    /* background-color: red; */
+  }
+  .ask-section {
+    /* background-color: red; */
+    border-top: 2px solid #7c7c7c;
+  }
+  .title-ask {
+    grid-column: 1/3;
+  }
+  .ask-section {
+    /* height: 100px; */
+  }
+  .ask-opticons {
+    flex-direction: column;
+  }
+}
